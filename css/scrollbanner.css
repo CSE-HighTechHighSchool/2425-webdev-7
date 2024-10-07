@@ -11,7 +11,7 @@
     z-index: 20;
 }
 #container .scroll {
-    background: #000;
+    background: var(--bs-gray-500);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,6 +46,7 @@
 .item {
     transition: 0.2s;
     display: flex;
+    flex-basis: 300px;
     align-items: center;
     gap: 0 0.2rem;
     color: #e2e8f0;
