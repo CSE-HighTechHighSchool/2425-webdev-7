@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* prevent vertical scroll bar glitch */
+html { overflow-y: scroll; }
+
+.carousel {
+  background: #1E488F;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  background: #1E488F;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell h1 {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 90px;
+  font-size: 80px;
+  color: #ffffff;
+  font-family: "SF Pro";
+}
+
+.carousel-cell h2 {
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    font-size: 50px;
+    color: rgb(185, 185, 185);
+    font-family: "SF Pro";
+  }
+
+/* I really like the "SF Pro" font.*/
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('./fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('./fonts/SF-Pro-Display-Bold.otf') format('opentype');
+    font-style: normal;
+}

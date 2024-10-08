@@ -1,0 +1,48 @@
+.dotseparator {
+    display: block;
+    background-color: #977b7b;
+    height: 35px;
+    width: 100%;
+}
+
+.newblock {
+    display: block;
+    background-color: #afafaf;
+    height: 300px;
+    width: 300px;
+}
+
+.grid {
+    border: 2px blue solid;
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 15px;
+  }
+
+.box {
+    margin: 2% 10px;
+    text-align: center;
+}
+
+.gridimage {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.a, .b, .c {
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+}
+
+.d, .e, .f {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+}
