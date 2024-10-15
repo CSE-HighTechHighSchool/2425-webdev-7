@@ -1,6 +1,6 @@
 .dotseparator {
     display: block;
-    background-color: #977b7b;
+    background-color: #ffffff;
     height: 35px;
     width: 100%;
 }
@@ -13,7 +13,6 @@
 }
 
 .grid {
-    border: 2px blue solid;
     height: 700px;
     width: 100%;
     display: grid;
@@ -30,9 +29,7 @@
 
 .gridimage {
     width: 100%;
-    height: auto;
     justify-content: center;
-    background-color: #000000;
 }
 
 .a, .b, .c {
@@ -42,7 +39,28 @@
 }
 
 .d, .e, .f {
-    display: flex;
-    align-items: flex-start; 
+    align-content: start;
     justify-content: center;
 }
+
+.box h1 {
+    font-size: 55px; 
+    font-family: "SF Pro";
+}
+
+.box h2 {
+    font-size: 25px;
+    font-family: "SF Pro";
+}
+
+.gray {
+    color: rgb(90, 90, 90);
+}
+
+#footer {
+    position:absolute;
+    bottom: -100px;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:#6cf;
+ }

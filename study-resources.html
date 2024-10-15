@@ -12,7 +12,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
-    
+    <link href="./css/header.css" rel="stylesheet" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
@@ -165,25 +165,33 @@
     </div>
 
 <header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">MOOC (Monmouth Offline Orz Camp)</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">HTHS Math Club</a><img src="./img/pisymbol.png" class="logoclass"/>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="newindex.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./study-resources.html">Study Resources</a>
+            <a class="nav-link" href="study-resources.html">Study Resources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./dojo.html">The Dojo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About & Leadership</a>
+            <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -212,38 +220,7 @@
     </div>
     <div class='fade'></div>
 </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Welcome to the Resources page!</h1>
-            <p class="opacity-75">This is a list of many competitions. Hover over one of the icons to figure out more information about the contest, along with resources to study and a little tip from me.</p>
-            <p><a class="btn btn-lg btn-primary" href="../about.html">More about the club</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Study Resources</h1>
-            <p>Resources and class recommendations for math and physics olympiads: the AMC, AIME, USAJMO, F=ma and USAPhO.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>The Dojo</h1>
-            <p>Interested in what resources you will need for your level and how you stack up compared to others? Check out this Dojo.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Enter the Dojo</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
 
   <!-- Marketing messaging and featurettes
@@ -252,49 +229,6 @@
 
   <div class="container marketing">
     <!-- there were headers here once-->
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Made by mathematicians,</span><br>for mathematicians.</h2>
-        <p class="lead">Created by people with years of experience under their belt, under the legacy of the orz Evan Chang, this club is designed instill a love in mathematics, and give resources for the ones who are.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Math resources galore.<br><span class="text-body-secondary">Study hard!</span></h2>
-        <p class="lead">Competitions require years of practice, and maybe two or three weeks of finding the resources. We have just the right kinds of practice for you to get going.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">The Dojo. <br><span class="text-body-secondary">How do you stack up?</span></h2>
-        <p class="lead">Enter your test scores into the Math Dojo, and we'll figure out your rank relative to the world of math competitions and what resources you need to get you to the next level.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
   </div><!-- /.container -->
 
 
@@ -305,7 +239,7 @@
   </footer>
 </main>
 <script src="./js/bootstrap.bundle.js" crossorigin="anonymous" defer></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" defer></script>
 <script src="./js/jquery-mousewheel-main/jquery-mousewheel-main/jquery.mousewheel.js" crossorigin="anonymous" defer></script>
 <script src="./js/study-resources.js" crossorigin="anonymous" defer></script>
     </body>

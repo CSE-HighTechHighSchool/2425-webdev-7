@@ -12,6 +12,12 @@
     <link href="./css/header.css" rel="stylesheet" crossorigin="anonymous">
     <script src="./js/bootstrap.bundle.js" crossorigin="anonymous" defer></script>
     
+    
+    <!--Custom styles & scripts for the resources menu-->
+    <link href="./css/scrollbanner.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" defer></script>
+<script src="./js/jquery-mousewheel-main/jquery-mousewheel-main/jquery.mousewheel.js" crossorigin="anonymous" defer></script>
+<script src="./js/study-resources.js" crossorigin="anonymous" defer></script>
 
     <style>
       .bd-placeholder-img {
@@ -52,59 +58,57 @@
 </svg>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">HTHS Math Club</a><img src="./img/pisymbol.png" class="logoclass"/>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="newindex.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="study-resources.html">Study Resources</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HTHS Math Club</a><img src="./img/pisymbol.png" class="logoclass"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="newindex.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="study-resources.html">Study Resources</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div id='container' class='horizontalscroll'>
+        <div class='scroll'>
+            <div class='item'><img src="./img/contestimg/amc-8.png" class="coolimg"/></div>
+            <div class='item'>Item 2</div>
+            <div class='item'>Item 3</div>
+            <div class='item'>Item 4</div>
+            <div class='item'>Item 5</div>
+            <div class='item'>Item 6</div>
+            <div class='item'>Item 7</div>
+            <div class='item'>Item 8</div>
+            <div class='item'>Item 9</div>
+            <div class='item'>Item 10</div>
+        </div>
+        <div class='fade'></div>
     </div>
-  </nav>
-    <!-- Flickity HTML init -->
-  <div class="carousel" data-flickity>
-    <div class="carousel-cell"><h1><strong>Welcome to Math Club!</strong></h1><br><h2>Learn math, find friends, and obtain study resources in one of the clubs of all time.</h2></div>
-    <div class="carousel-cell"><h1><strong>Study Resources</strong></h1><br><h2>Resources and class recommendations for math and physics olympiads: the AMC, AIME, USAJMO, F=ma and USAPhO.</h2></div>
-    <div class="carousel-cell"><h1><strong>The Dojo</strong></h1><h2>Interested in what resources you will need for your level and how you stack up compared to others? Check out this Dojo.</h2></div>
-  </div>
-  
-  <div class="dotseparator"></div>
-  
-  <div class="grid">
-    <div class="box a"><img class="gridimage" src="./img/einsteinmath.png"/></div>
-    <div class="box b"><img class="gridimage" src="./img/mitlibrary.png"></div>
-    <div class="box c"><img class="gridimage" src="./img/mathdojo.png"></div>
-    <div class="box d"><h1 class="gray">Made by mathematicians,</h1><h1>for mathematicians.</h1><h2>Created by people with years of experience under their belt, under the legacy of the orz Evan Chang, this club is designed instill a love in mathematics, and give resources for the ones who are.</h2></div>
-    <div class="box e"><h1 class="gray">Math resources galore.</h1><h1>Study hard!</h1><h2>Competitions require years of practice, and maybe two or three weeks of finding the resources. We have just the right kinds of practice for you to get going.</h2></div>
-    <div class="box f"><h1 class="gray">The Dojo.</h1><h1>How do you stack up?</h1><h2>Enter your test scores into the Math Dojo, and we'll figure out your rank relative to the world of math competitions and what resources you need to get you to the next level.</h2></div>
-  </div>
 
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
