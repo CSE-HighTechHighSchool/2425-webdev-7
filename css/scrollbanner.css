@@ -4,7 +4,7 @@
     font-family: Montserrat;
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: normal;
     background: #AFB2B6;
     color: #fff;
     display: flex;
@@ -16,7 +16,7 @@
     justify-content: space-around;
     align-items: center;
     width: fit-content;
-    white-space: nowrap;
+    white-space: normal;
     overflow-x: auto;
     z-index: 20;
     flex-grow: 1;
@@ -48,39 +48,62 @@
     align-items: center;
     justify-content: center;
     transition: 0.2s;
-    text-align: center;
     gap: 0 0.2rem;
     color: #e2e8f0;
     font-size: 2rem;
     background-color: #152c41;
-    min-width: 280px;
+    min-width: 400px;
     min-height: 160px;
     margin: 0rem 2rem;
     border-radius: 0.4rem;
-    white-space: nowrap;
+    white-space: normal;
     box-shadow:
     0 0.1rem 0.2rem #00000033,
     0 0.1rem 0.5rem #0000004d,
     0 0.2rem 01.5rem #00000066,
 }
 
+:root {
+    --is-hovered: true;
+}
+
 .item:hover {
+    white-space: normal;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 0.2rem;
     color: #e2e8f0;
     font-size: 2rem;
-    min-width: 350px;
+    min-width: 600px;
     min-height: 200px;
     background-color: #152c41;
     margin: 0rem 2rem;
     border-radius: 0.4rem;
-    white-space: nowrap;
     box-shadow:
     0 0.1rem 0.2rem #00000033,
     0 0.1rem 0.5rem #0000004d,
     0 0.2rem 01.5rem #00000066,
+}
+
+.item img {
+    vertical-align: middle;
+    transition: 0.2s;
+}
+
+.item:hover img {
+    width: 300px;
+    height: auto !important;
+}
+
+.item p {
+    transition: 0.2s;
+    text-align: center;
+    font-size: 0px;
+}
+
+.item:hover p {
+    font-size: 20px;
 }
 
 .coolimg {

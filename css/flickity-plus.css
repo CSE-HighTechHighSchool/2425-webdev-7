@@ -38,6 +38,13 @@ html { overflow-y: scroll; }
     font-family: "SF Pro";
   }
 
+.beafooter {
+  position: absolute;
+  top: 150vh;
+  right: 0vh;
+  width: 100%;
+}
+
 /* I really like the "SF Pro" font.*/
 
 @font-face {
