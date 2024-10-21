@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
     <link href="./css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="./css/flickity-plus.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="./css/threegrid.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./css/aboutflickity-plus.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./css/aboutthreegrid.css" rel="stylesheet" crossorigin="anonymous">
     <link href="./css/header.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./css/aboutimagehead.css" rel="stylesheet" crossorigin="anonymous"> 
     <script src="./js/bootstrap.bundle.js" crossorigin="anonymous" defer></script>
     
 
@@ -68,10 +69,6 @@
           <li class="nav-item">
             <a class="nav-link" href="study-resources.html">Study Resources</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="newabout.html">About</a>
-          </li>
-          <!--
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
@@ -83,9 +80,8 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-        -->
           <li class="nav-item">
-            <a class="nav-link disabled">Dojo</a>
+            <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -95,22 +91,22 @@
       </div>
     </div>
   </nav>
-    <!-- Flickity HTML init -->
-  <div class="carousel" data-flickity>
-    <div class="carousel-cell"><h1><strong>Welcome to Math Club!</strong></h1><br><h2>Learn math, find friends, and obtain study resources in one of the clubs of all time.</h2></div>
-    <div class="carousel-cell"><h1><strong>Study Resources</strong></h1><br><h2>Resources and class recommendations for math and physics olympiads: the AMC, AIME, USAJMO, F=ma and USAPhO.</h2></div>
-    <div class="carousel-cell"><h1><strong>The Dojo</strong></h1><h2>Interested in what resources you will need for your level and how you stack up compared to others? Check out this Dojo.</h2></div>
+
+  <!--About Us Header-->
+  <div class="imagehtml300">
+    <img src="./img/einsteinmath.png"/>
+    <div class="centered">About Us</div>
   </div>
   
-  <div class="dotseparator"></div>
-  
   <div class="grid">
-    <div class="box a"><img class="gridimage" src="./img/einsteinmath.png"/></div>
-    <div class="box b"><img class="gridimage" src="./img/mitlibrary.png"></div>
-    <div class="box c"><img class="gridimage" src="./img/mathdojo.png"></div>
-    <div class="box d"><h1 class="gray">Made by mathematicians,</h1><h1>for mathematicians.</h1><h2>Created by people with years of experience under their belt, under the legacy of the orz Evan Chang, this club is designed instill a love in mathematics, and give resources for the ones who are.</h2></div>
-    <div class="box e"><h1 class="gray">Math resources galore.</h1><h1>Study hard!</h1><h2>Competitions require years of practice, and maybe two or three weeks of finding the resources. We have just the right kinds of practice for you to get going.</h2></div>
-    <div class="box f"><h1 class="gray">The Dojo.</h1><h1>How do you stack up?</h1><h2>Enter your test scores into the Math Dojo, and we'll figure out your rank relative to the world of math competitions and what resources you need to get you to the next level.</h2></div>
+    <div class="box a"><h1>Our Values</h1></div>
+    <div class="box b"><h1>Leadership</h1></div>
+    <div class="box c"><p>1. Without selfish desire, for the good of the club and the world, teach students mathematics.<br>2. Help other students, but only in a way such that the sum of the clubs' contributions is greater than the sum of the individual contributions. T(oo)S(hort); D(idn't)R(ead), <a href="https://artofproblemsolving.com/assets/pdfs/lumen/BeLessHelpful_MTCircularAutumn2012.pdf">Look here.</a></p></div>
+    <div class="box d"><div class="carousel" data-flickity>
+      <div class="carousel-cell"><img src="./img/placeholder.png" width="200px"/><br><h2>Harry Fan is an 11th grader and cool guy at the Math Club. In 9th grade, he obtained an A+ in the 25-week AoPS Calculus Class (highest grade's an A!) and obtained a 5 on the AP Calculus BC. In 10th grade, he scored a 120 and 9 on the AMC 10 and AIME II, respectively. He is currently doing Linear Algebra research.</h2></div>
+      <div class="carousel-cell"><img src="./img/placeholder.png" width="200px"/><br><h2>Placeholder text for another person.</h2></div>
+      <div class="carousel-cell"><img src="./img/placeholder.png" width="200px"/><h2>Placeholder text for another person.</h2></div>
+    </div></div>
   </div>
 
   <div class="container">
@@ -124,7 +120,6 @@
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="./newindex.html" class="nav-link px-2 text-muted">Home</a></li>
         <li class="nav-item"><a href="./study-resources.html" class="nav-link px-2 text-muted">Study Resources</a></li>
-        <li class="nav-item"><a href="./newabout.html" class="nav-link px-2 text-muted">About</a></li>
         <!--
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
@@ -132,6 +127,13 @@
       -->
       </ul>
     </footer>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="imagehtml400">
+    <img src="./img/einsteinmath.png"/>
+    <div class="centered">Want to learn more?<br><p>Phone: 732-405-1039<br>Email: harry07751@gmail.com</p></div>
   </div>
 
 </body>

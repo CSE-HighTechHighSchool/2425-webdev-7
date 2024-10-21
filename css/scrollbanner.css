@@ -76,7 +76,7 @@
     color: #e2e8f0;
     font-size: 2rem;
     min-width: 600px;
-    min-height: 200px;
+    min-height: 450px;
     background-color: #152c41;
     margin: 0rem 2rem;
     border-radius: 0.4rem;
@@ -87,7 +87,6 @@
 }
 
 .item img {
-    vertical-align: middle;
     transition: 0.2s;
 }
 
