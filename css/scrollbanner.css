@@ -44,16 +44,16 @@
     100% {transform: translateX(-50%);}
 }
 .item {
-    display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     transition: 0.2s;
     gap: 0 0.2rem;
     color: #e2e8f0;
     font-size: 2rem;
     background-color: #152c41;
-    min-width: 400px;
-    min-height: 160px;
+    min-width: 300px;
+    min-height: 10px;
     margin: 0rem 2rem;
     border-radius: 0.4rem;
     white-space: normal;
@@ -69,14 +69,13 @@
 
 .item:hover {
     white-space: normal;
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 0.2rem;
     color: #e2e8f0;
     font-size: 2rem;
     min-width: 600px;
-    min-height: 450px;
+    min-height: 350px;
     background-color: #152c41;
     margin: 0rem 2rem;
     border-radius: 0.4rem;
@@ -88,20 +87,52 @@
 
 .item img {
     transition: 0.2s;
+
 }
 
 .item:hover img {
-    width: 300px;
+    width: 350px;
     height: auto !important;
+    margin: auto;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('./fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('./fonts/SF-Pro-Display-Bold.otf') format('opentype');
+    font-style: normal;
 }
 
 .item p {
     transition: 0.2s;
-    text-align: center;
     font-size: 0px;
+    margin-bottom:0px;
+    font-family: "SF Pro";
+}
+
+.item h1 {
+    transition: 0.2s;
+    font-size: 0px;
+    margin-bottom:0px;
+    font-family: "SF Pro";
+}
+.item h2 {
+    transition: 0.2s;
+    font-size: 0px;
+    margin-bottom:0px;
+    font-family: "SF Pro";
 }
 
 .item:hover p {
+    font-size: 20px;
+}
+
+.item:hover h1 {
     font-size: 20px;
 }
 
