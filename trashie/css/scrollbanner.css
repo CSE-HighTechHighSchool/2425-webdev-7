@@ -13,8 +13,8 @@
 #container .scroll {
     background: var(--bs-gray-500);
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center safe;
     width: fit-content;
     white-space: normal;
     overflow-x: auto;
@@ -22,13 +22,6 @@
     flex-grow: 1;
 }
 
-#container .scroll .item:first-child {
-    margin-left: auto;
-}
-
-#container .scroll .item:last-child {
-    margin-right: auto;
-}
 
 .scroll:hover {
     flex-grow: 3;
@@ -44,6 +37,7 @@
         #000
     );
     inset: 0;
+    pointer-event: none;
 }
 @keyframes loop {
     0% {transform: translateX(0%);}

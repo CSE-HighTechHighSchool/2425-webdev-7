@@ -1,0 +1,49 @@
+.imagehtml300 {
+    --font-size: 100px;
+    --height: 300px;
+    font-size: var(--font-size);
+    height: var(--height);
+    text-align: center;
+    font-family: "SF Pro";
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imagehtml300 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.imagehtml300 .centered {
+    position: relative;
+    bottom: calc(var(--font-size) + calc(var(--height) * 0.41));
+}
+
+.imagehtml400 {
+    --font-size: 100px;
+    --height: 400px;
+    font-size: var(--font-size);
+    height: var(--height);
+    text-align: center;
+    font-family: "SF Pro";
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imagehtml400 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.imagehtml400 .centered {
+    position: relative;
+    bottom: calc(var(--font-size) + calc(var(--height) * 0.60));
+}
+
+.imagehtml400 .centered p {
+    font-size: 35px;
+}

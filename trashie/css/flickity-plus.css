@@ -6,16 +6,14 @@ body { font-family: sans-serif; }
 html { overflow-y: scroll; }
 
 .carousel {
-  background: #16423C;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  background: #1E488F;
 }
 
 .carousel-cell {
   width: 100%;
   height: auto;
   margin-right: 10px;
-  background: #16423C;
+  background: #1E488F;
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
@@ -45,4 +43,18 @@ html { overflow-y: scroll; }
   top: 150vh;
   right: 0vh;
   width: 100%;
+}
+
+/* I really like the "SF Pro" font.*/
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('./fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url('./fonts/SF-Pro-Display-Bold.otf') format('opentype');
+    font-style: normal;
 }

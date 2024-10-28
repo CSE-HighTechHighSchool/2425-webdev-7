@@ -5,7 +5,7 @@
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #16423C;
+    color: rgb(var(--bs-tertiary-color-rgb));
   }
   
   
@@ -15,7 +15,6 @@ body {
   /* Carousel base class */
   .carousel {
     margin-bottom: 4rem;
-    background-color: #16423C;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
