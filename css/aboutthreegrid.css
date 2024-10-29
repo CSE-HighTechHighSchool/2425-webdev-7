@@ -15,8 +15,8 @@
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px 190px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     row-gap: 10px;
     column-gap: 15px;
   }
@@ -29,6 +29,19 @@
 .gridimage {
     width: 100%;
     justify-content: center;
+}
+
+.sortofgreen {
+    background-color: rgb(222, 149, 76);
+    
+}
+
+.notasgreen {
+    background-color: #f4ca8c; 
+}
+
+.footercolor {
+    background-color: #f8e4c6;
 }
 
 .a, .b {

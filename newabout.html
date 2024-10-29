@@ -13,12 +13,12 @@
     <link href="./css/header.css" rel="stylesheet" crossorigin="anonymous">
     <link href="./css/aboutimagehead.css" rel="stylesheet" crossorigin="anonymous"> 
     <script src="./js/bootstrap.bundle.js" crossorigin="anonymous" defer></script>
-    <link href="./css/carousel.css" rel="stylesheet">
+    <link href="./css/aboutcsscarousel.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg" style="background-color: #f8e4c6;">
+    <div class="container-fluid"
       <!-- Name of Club -->
       <a class="navbar-brand" href="#">HTHS Math Club</a><img src="./img/pisymbol.png" class="logoclass"/>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,21 +53,70 @@
   <!-- Two panels: One about the club's values on the left, and
    one about the club's leadership on the right. These two panels
    each make up one column of a two-column, two-row grid.-->
-
+  <div class="sortofgreen">
   <div class="grid">
     <div class="box a"><h1>Our Values</h1></div>
     <div class="box b"><h1>Leadership</h1></div>
+  </div>
+  </div>
+  <div class="notasgreen">
+  <div class="grid">
     <div class="box c"><p>1. Without selfish desire, for the good of the club and the world, teach students mathematics.<br>2. Help other students, but only in a way such that the sum of the clubs' contributions is greater than the sum of the individual contributions. T(oo)S(hort); D(idn't)R(ead), <a href="https://artofproblemsolving.com/assets/pdfs/lumen/BeLessHelpful_MTCircularAutumn2012.pdf">Look here.</a></p></div>
     <!-- A carousel is made for the leadership. Each element of the carousel indicates one person in the club. -->
-    <div class="box d"><div class="carousel" data-flickity>
-      <div class="carousel-cell"><img src="./img/placeholder.png" width="200px"/><br><h2>Harry Fan is an 11th grader and cool guy at the Math Club. In 9th grade, he obtained an A+ in the 25-week AoPS Calculus Class (highest grade's an A!) and obtained a 5 on the AP Calculus BC. In 10th grade, he scored a 120 and 9 on the AMC 10 and AIME II, respectively. He is currently doing Linear Algebra research.</h2></div>
-      <div class="carousel-cell"><img src="./img/placeholder.png" width="200px"/><br><h2>Placeholder text for another person.</h2></div>
-      <div class="carousel-cell"><img src="./img/placeholder.png" width="200px"/><h2>Placeholder text for another person.</h2></div>
-    </div></div>
+    <div class="box d"><section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="textcontainer"><h1>Harry Fan</h1><p>Harry Fan is an 11th grader and cool guy at the Math Club. In 9th grade, he obtained an A+ in the 25-week AoPS Calculus Class (highest grade's an A!) and obtained a 5 on the AP Calculus BC. In 10th grade, he scored a 120 and 9 on the AMC 10 and AIME II, respectively. He is currently doing Linear Algebra research.</p></div>
+          <div class="carousel__snapper">
+            <a href="#carousel__slide3"
+               class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide">
+            <div class="textcontainer"><h1>Study Resources</h1><h2>Resources and class recommendations for math and physics olympiads: the AMC, AIME, USAJMO, F=ma and USAPhO.</h2></div>
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="textcontainer"><h1>The Dojo</h1><h2>Interested in what resources you will need for your level and how you stack up compared to others? Check out this Dojo.</h2></div>
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1"
+             class="carousel__next">Go to next slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+               class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+               class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+               class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+        </ol>
+      </aside>
+    </section></div>
+  </div>
   </div>
 
-  <!-- Element to separate the grid from the "Learn more" image-text element -->
-  <div class="separator"></div>
 
   <!-- Element for people interested in learning more -->
   <div class="imagehtml400">
@@ -77,8 +126,9 @@
 
 </body>
 
+<div class="footercolor">
 <!-- Footer -->
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
   <p class="col-md-4 mb-0 text-muted">&copy; 2024 HTHSMC</p>
 
   <!-- Logo -->
@@ -96,4 +146,5 @@
     <li class="nav-item"><a class="nav-link disabled px-2 text-muted">Dojo</a></li>
   </ul>
 </footer>
+</div>
 </html>

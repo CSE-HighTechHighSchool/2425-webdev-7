@@ -89,7 +89,7 @@
   /*We'll use a variable for padding-top to align the left and right buttons with the carousel.*/
 
   :root {
-    --paddingamount: 30%;
+    --paddingamount: 300px;
   }
 
   .carousel {
@@ -118,12 +118,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #f99;
+    background-color: #16423C;
     counter-increment: item;
   }
   
   .carousel__slide:nth-child(even) {
-    background-color: #99f;
+    background-color: #16423C;
   }
   
   .carousel__slide:before {
@@ -175,6 +175,7 @@
     bottom: 0;
     left: 0;
     text-align: center;
+    background-color: #16423C;
   }
   
   .carousel__navigation-list,
@@ -203,7 +204,7 @@
   .carousel__next {
     position: absolute;
     top: 0;
-    margin-top: calc(calc(var(--paddingamount) * 0.375) + 81.070px); 
+    margin-top: calc(calc(calc(var(--paddingamount) * 0.375) + 81.070px) - 20px); 
     width: 4rem;
     height: 4rem;
     transform: translateY(-50%);
@@ -261,8 +262,24 @@
 
 /* Text style for the carousel. */ 
 
-.carousel__slide p {
+.carousel__slide {
+  text-align: center;
+}
+
+.carousel__slide .textcontainer {
   position: relative;
-  top: 50%;
-  left: 50%;
+  top: 95px;
+  margin: 0 60px;
+}
+
+.carousel__slide h1 {
+  color: #E9EFEC;
+  vertical-align: center;
+  font-size: 55px;
+}
+
+.carousel__slide h2 {
+  color: #E9EFEC;
+  vertical-align: center;
+  font-size: 30px;
 }

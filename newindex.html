@@ -13,7 +13,7 @@
     <link href="./css/threegrid.css" rel="stylesheet" crossorigin="anonymous">
     <link href="./css/header.css" rel="stylesheet" crossorigin="anonymous">
     <script src="./js/bootstrap.bundle.js" crossorigin="anonymous" defer></script>
-    <link href="./css/carousel.css" rel="stylesheet">
+    <script src="./js/jquery.js" crossorigin="anonymous" defer></script>
   </head>
   <body>
 
@@ -56,17 +56,18 @@
       <li id="carousel__slide1"
           tabindex="0"
           class="carousel__slide">
-        <p>Text</p>
+        <div class="textcontainer"><h1>Welcome to Math Club!</h1><h2>One of the clubs of all time.</h2></div>
         <div class="carousel__snapper">
-          <a href="#carousel__slide4"
+          <a href="#carousel__slide3"
              class="carousel__prev">Go to last slide</a>
           <a href="#carousel__slide2"
-             class="carousel__next" id="ye">Go to next slide</a>
+             class="carousel__next">Go to next slide</a>
         </div>
       </li>
       <li id="carousel__slide2"
           tabindex="0"
           class="carousel__slide">
+          <div class="textcontainer"><h1>Study Resources</h1><h2>Resources and class recommendations for math and physics olympiads: the AMC, AIME, USAJMO, F=ma and USAPhO.</h2></div>
         <div class="carousel__snapper"></div>
         <a href="#carousel__slide1"
            class="carousel__prev">Go to previous slide</a>
@@ -76,20 +77,12 @@
       <li id="carousel__slide3"
           tabindex="0"
           class="carousel__slide">
+        <div class="textcontainer"><h1>The Dojo</h1><h2>Interested in what resources you will need for your level and how you stack up compared to others? Check out this Dojo.</h2></div>
         <div class="carousel__snapper"></div>
         <a href="#carousel__slide2"
            class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide4"
-           class="carousel__next">Go to next slide</a>
-      </li>
-      <li id="carousel__slide4"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide3"
-           class="carousel__prev">Go to previous slide</a>
         <a href="#carousel__slide1"
-           class="carousel__next">Go to first slide</a>
+           class="carousel__next">Go to next slide</a>
       </li>
     </ol>
     <aside class="carousel__navigation">
@@ -105,10 +98,6 @@
         <li class="carousel__navigation-item">
           <a href="#carousel__slide3"
              class="carousel__navigation-button">Go to slide 3</a>
-        </li>
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide4"
-             class="carousel__navigation-button">Go to slide 4</a>
         </li>
       </ol>
     </aside>
