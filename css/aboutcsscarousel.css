@@ -94,8 +94,9 @@
 
   .carousel {
     position: relative;
-    padding-top: var(--paddingamount);
-    filter: drop-shadow(0 0 10px #0003);
+    height: 600px;
+    padding-bottom: 250px;
+    /*filter: drop-shadow(0 0 10px #0003);*/
     perspective: 100px;
   }
   
@@ -103,7 +104,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 38px;
     left: 0;
     display: flex;
     overflow-x: scroll;
@@ -118,13 +119,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #16423C;
+    background-color: #f4ca8c;
     counter-increment: item;
+    height: auto;
   }
   
-  .carousel__slide:nth-child(even) {
+  /*.carousel__slide:nth-child(even) {
     background-color: #16423C;
-  }
+  }*/
   
   .carousel__slide:before {
     position: absolute;
@@ -175,7 +177,7 @@
     bottom: 0;
     left: 0;
     text-align: center;
-    background-color: #16423C;
+    background-color: #f4ca8c;
   }
   
   .carousel__navigation-list,
@@ -273,19 +275,19 @@
 }
 
 .carousel__slide h1 {
-  color: #E9EFEC;
+  color: #212529;
   vertical-align: center;
   font-size: 55px;
 }
 
 .carousel__slide h2 {
-  color: #E9EFEC;
+  color: #212529;
   vertical-align: center;
   font-size: 30px;
 }
 
 .carousel__slide p {
-  color: #E9EFEC;
+  color: #212529;
   vertical-align: center;
   font-size: 25px;
 }
