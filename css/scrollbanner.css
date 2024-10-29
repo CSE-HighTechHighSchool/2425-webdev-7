@@ -5,16 +5,16 @@
     position: relative;
     overflow: hidden;
     white-space: normal;
-    background: #AFB2B6;
+    background: #7AB2D3;
     color: #fff;
     display: flex;
     z-index: 20;
 }
 #container .scroll {
-    background: var(--bs-gray-500);
+    background: #7AB2D3;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center safe;
     width: fit-content;
     white-space: normal;
     overflow-x: auto;
@@ -22,6 +22,13 @@
     flex-grow: 1;
 }
 
+#container .scroll .item:first-child {
+    margin-left: auto;
+}
+
+#container .scroll .item:last-child {
+    margin-right: auto;
+}
 
 .scroll:hover {
     flex-grow: 3;
@@ -37,7 +44,6 @@
         #000
     );
     inset: 0;
-    pointer-event: none;
 }
 @keyframes loop {
     0% {transform: translateX(0%);}
@@ -51,7 +57,7 @@
     gap: 0 0.2rem;
     color: #e2e8f0;
     font-size: 2rem;
-    background-color: #152c41;
+    background-color: #394b6a;
     min-width: 300px;
     min-height: 10px;
     margin: 0rem 2rem;
@@ -76,7 +82,7 @@
     font-size: 2rem;
     min-width: 600px;
     min-height: 350px;
-    background-color: #152c41;
+    background-color: #2a374b;
     margin: 0rem 2rem;
     border-radius: 0.4rem;
     box-shadow:
@@ -120,12 +126,14 @@
     font-size: 0px;
     margin-bottom:0px;
     font-family: "SF Pro";
+    font-weight: bold;
 }
 .item h2 {
     transition: 0.2s;
     font-size: 0px;
     margin-bottom:0px;
     font-family: "SF Pro";
+    font-weight: bold;
 }
 
 .item:hover p {
@@ -133,10 +141,25 @@
 }
 
 .item:hover h1 {
-    font-size: 20px;
+    font-size: 35px;
+}
+
+.item:hover h2 {
+    font-size: 25px;
 }
 
 .coolimg {
     width: 100px !important;
     height: 100% !important;
 }
+
+/* Make sure footer takes up entire bottom of screen. */
+
+.container {
+    width: 100% !important;
+}
+
+.beafooter {
+    width: 100% !important;
+}
+
