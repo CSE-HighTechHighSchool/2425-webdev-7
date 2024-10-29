@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
     <link href="./css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="./css/aboutflickity-plus.css" rel="stylesheet" crossorigin="anonymous">
     <link href="./css/aboutthreegrid.css" rel="stylesheet" crossorigin="anonymous">
     <link href="./css/header.css" rel="stylesheet" crossorigin="anonymous">
     <link href="./css/aboutimagehead.css" rel="stylesheet" crossorigin="anonymous"> 
     <script src="./js/bootstrap.bundle.js" crossorigin="anonymous" defer></script>
     <link href="./css/aboutcsscarousel.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="./js/causeerror.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -37,7 +37,7 @@
             <a class="nav-link" href="newabout.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Dojo</a>
+            <button onclick="causeerror()" name="yeah" class="nav-link" style="color: #cccccc">Dojo</a>
           </li>
         </ul>
       </div>
@@ -53,13 +53,13 @@
   <!-- Two panels: One about the club's values on the left, and
    one about the club's leadership on the right. These two panels
    each make up one column of a two-column, two-row grid.-->
-  <div class="sortofgreen">
+  <div class="sortofyellow">
   <div class="grid">
     <div class="box a"><h1>Our Values</h1></div>
     <div class="box b"><h1>Leadership</h1></div>
   </div>
   </div>
-  <div class="notasgreen">
+  <div class="notasyellow">
   <div class="grid">
     <div class="box c"><p>1. Without selfish desire, for the good of the club and the world, teach students mathematics.<br>2. Help other students, but only in a way such that the sum of the clubs' contributions is greater than the sum of the individual contributions. T(oo)S(hort); D(idn't)R(ead), <a href="https://artofproblemsolving.com/assets/pdfs/lumen/BeLessHelpful_MTCircularAutumn2012.pdf">Look here.</a></p></div>
     <!-- A carousel is made for the leadership. Each element of the carousel indicates one person in the club. -->
@@ -79,7 +79,7 @@
         <li id="carousel__slide2"
             tabindex="0"
             class="carousel__slide">
-            <div class="textcontainer"><h1>Study Resources</h1><h2>Resources and class recommendations for math and physics olympiads: the AMC, AIME, USAJMO, F=ma and USAPhO.</h2></div>
+            <div class="textcontainer"><h1>Example Person</h1><h2>This is another member of the math club.</h2></div>
           <div class="carousel__snapper"></div>
           <a href="#carousel__slide1"
              class="carousel__prev">Go to previous slide</a>
@@ -89,7 +89,7 @@
         <li id="carousel__slide3"
             tabindex="0"
             class="carousel__slide">
-          <div class="textcontainer"><h1>The Dojo</h1><h2>Interested in what resources you will need for your level and how you stack up compared to others? Check out this Dojo.</h2></div>
+          <div class="textcontainer"><h1>Example Person</h1><h2>This is another member of the math club.</h2></div>
           <div class="carousel__snapper"></div>
           <a href="#carousel__slide2"
              class="carousel__prev">Go to previous slide</a>
@@ -121,7 +121,7 @@
   <!-- Element for people interested in learning more -->
   <div class="imagehtml400">
     <img src="./img/einsteinmath.png"/>
-    <div class="centered">Want to learn more?<br><p>Phone: 732-405-1039<br>Email: harry07751@gmail.com</p></div>
+    <div class="centered">Contact Us<br><p>Phone: 732-405-1039<br>Email: harry07751@gmail.com</p></div>
   </div>
 
 </body>
@@ -143,7 +143,7 @@
     <li class="nav-item"><a href="./newindex.html" class="nav-link px-2 text-muted">Home</a></li>
     <li class="nav-item"><a href="./study-resources.html" class="nav-link px-2 text-muted">Study Resources</a></li>
     <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-muted">About</a></li>
-    <li class="nav-item"><a class="nav-link disabled px-2 text-muted">Dojo</a></li>
+    <li class="nav-item"><button onclick="causeerror()" name="yeah" class="nav-link" style="color: #cccccc">Dojo</button></li>
   </ul>
 </footer>
 </div>
